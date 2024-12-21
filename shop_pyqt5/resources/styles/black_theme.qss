@@ -1,0 +1,194 @@
+/* Общий стиль окна */
+QWidget {
+    background-color: #1e1e1e; /* Темно-серый фон */
+    color: white;
+}
+
+QPushButton:hover { /* Изменение стиля при наведении */
+    background-color: #404040; /* Немного более светлый оттенок серого */
+}
+
+/* Стиль кнопок */
+QPushButton {
+    background-color: #2d2d30; /* Более светлый серый фон кнопки */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+}
+QPushButton:pressed {
+    background-color: #3a3a3c; /* Фон при нажатии */
+}
+
+/* Стиль кнопки загрузки аватара пользователя в registration.py */
+QPushButton#uploadImage {
+    background-color: #1e1e1e; /* Более светлый серый фон кнопки */
+    border-radius: 64px;
+    padding: 10px 16px;
+    font-size: 12pt;
+}
+
+/* Стиль кнопки загрузки аватара пользователя в registration.py */
+QPushButton#uploadImage:hover { /* Изменение стиля при наведении */
+    background-color: #404040; /* Немного более светлый оттенок серого */
+}
+
+/* Стиль для QToolButton */
+QToolButton {
+    background-color: #1e1e1e; /* Светло-серый фон */
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 10pt;
+    color: white;
+}
+
+QToolButton:pressed {
+    background-color: #3a3a3c; /* При нажатии */
+}
+
+/* Стиль полей ввода */
+QLineEdit, QTextEdit {
+    background-color: #2d2d30;
+	border-radius: 10px;
+    border: none;
+    padding: 8px;
+    color: white;
+}
+
+/* Стиль меток */
+QLabel {
+    color: white;
+    font-size: 11pt;
+}
+
+/* Стиль для QFrame */
+#frame {
+    background-color: #F0F0F0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+QFrame#main_menu_line, #main_menu_line_2 { /* Изменение стиле для наших lines в main_window */
+    background-color: #404040; /* Немного более светлый оттенок серого */
+}
+
+/* Стили для QCheckBox */
+QCheckBox {
+    margin-left: 10px; /* Отступ слева */
+    spacing: 12px; /* Расстояние между текстом и индикатором */
+    color: white;
+    font-size: 14pt;
+}
+
+/* Индикатор чекбокса */
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff; /* Белый цвет границы */
+    border-radius: 6px; /* Скругленные углы */
+    background-color: #2d2d30; /* Цвет фона индикатора */
+}
+
+/* Проверенный индикатор */
+QCheckBox::indicator:checked {
+    image: url(resources/images/check.png); /* Изображение галочки */
+    background-color: #2d2d30; /* Цвет фона проверенного индикатора */
+}
+
+/* Чекбокс при наведении курсора */
+QCheckBox:hover {
+    color: #dddddd; /* Менее яркий белый цвет текста при наведении */
+}
+
+/* Чекбокс при фокусировке */
+QCheckBox:focus {
+    outline: none; /* Убираем стандартную рамку фокуса */
+}
+
+
+/* Общий стиль карточки */
+QFrame#product_card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Стиль для изображения товара */
+QLabel#product_card_image {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 8px;
+}
+
+/* Стиль для названия товара */
+QLabel#product_card_name {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 8px;
+}
+
+/* Стиль для цены товара */
+QLabel#product_card_price {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-top: 4px;
+}
+
+/* Стиль для кнопки "Купить" */
+QPushButton#product_card_buy_button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+QPushButton#product_card_buy_button:hover {
+    background-color: #1976D2;
+}
+
+/* Стиль таблицы */
+QTableWidget {
+    background-color: #2d2d30; /* Темный фон таблицы */
+    gridline-color: #404040; /* Цвет линий сетки */
+    selection-background-color: #3a3a3c; /* Цвет выделения строки */
+    selection-color: white; /* Цвет текста выделенной строки */
+    outline: 0; /* Убираем обводку вокруг таблицы */
+}
+
+/* Заголовки столбцов */
+QHeaderView::section {
+    background-color: #2d2d30; /* Цвет заголовков */
+    color: white; /* Цвет текста заголовка */
+    padding: 4px; /* Внутренний отступ */
+    border: none; /* Убираем границу */
+    border-bottom: 1px solid #404040; /* Нижняя граница */
+    font-size: 12pt; /* Размер шрифта */
+}
+
+/* Ячейки таблицы */
+QTableWidget::item {
+    padding: 8px; /* Внутренние отступы ячеек */
+    border: none; /* Убираем границу */
+    background-color: transparent; /* Прозрачный фон ячейки */
+    color: white; /* Цвет текста */
+    selection-background-color: #3a3a3c; /* Цвет выделения */
+    selection-color: white; /* Цвет текста выделенной ячейки */
+}
+
+/* Выделение строки */
+QTableWidget::item:selected {
+    background-color: #3a3a3c; /* Цвет выделения строки */
+    color: white; /* Цвет текста выделенной строки */
+}
+
+/* Строка, находящаяся под курсором мыши */
+QTableWidget::item:hover {
+    background-color: #404040; /* Цвет при наведении */
+    color: white; /* Цвет текста при наведении */
+}

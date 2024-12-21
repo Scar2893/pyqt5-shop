@@ -1,0 +1,155 @@
+/* Светлая тема */
+
+/* Общий стиль окна */
+QWidget {
+    background-color: #fafafa; /* Светло-серый фон */
+    color: #212121;
+}
+
+QPushButton:hover { /* Изменение стиля при наведении */
+    background-color: #e0e0e0; /* Немного более темный оттенок серого */
+}
+
+/* Стиль кнопок */
+QPushButton {
+    background-color: #eeeeee; /* Светло-серый фон кнопки */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+}
+QPushButton:pressed {
+    background-color: #cccccc; /* Фон при нажатии */
+}
+
+/* Стиль кнопки загрузки аватара пользователя в registration.py */
+QPushButton#uploadImage {
+    background-color: #fafafa; /* Светло-серый фон кнопки */
+    border-radius: 64px;
+    padding: 10px 16px;
+    font-size: 12pt;
+}
+
+/* Стиль кнопки загрузки аватара пользователя в registration.py */
+QPushButton#uploadImage:hover { /* Изменение стиля при наведении */
+    background-color: #e0e0e0; /* Немного более темный оттенок серого */
+}
+
+/* Стиль для QToolButton */
+QToolButton {
+    background-color: #fafafa; /* Светло-серый фон */
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 10pt;
+    color: #212121;
+}
+
+QToolButton:pressed {
+    background-color: #cccccc; /* При нажатии */
+}
+
+/* Стиль полей ввода */
+QLineEdit, QTextEdit {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    color: #212121;
+}
+
+/* Стиль меток */
+QLabel {
+    color: #212121;
+    font-size: 11pt;
+}
+
+/* Стиль для QFrame */
+#frame {
+    background-color: #E0E0E0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+QFrame#main_menu_line, #main_menu_line_2 { /* Изменение стиле для наших lines в main_window */
+    background-color: #BDBDBD; /* Немного более темный оттенок серого */
+}
+
+/* Стили для QCheckBox */
+QCheckBox {
+    margin-left: 10px; /* Отступ слева */
+    spacing: 12px; /* Расстояние между текстом и индикатором */
+    color: #212121;
+    font-size: 14pt;
+}
+
+/* Индикатор чекбокса */
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #212121; /* Черный цвет границы */
+    border-radius: 6px; /* Скругленные углы */
+    background-color: #eeeeee; /* Цвет фона индикатора */
+}
+
+/* Проверенный индикатор */
+QCheckBox::indicator:checked {
+    image: url(resources/images/check.png); /* Изображение галочки */
+    background-color: #eeeeee; /* Цвет фона проверенного индикатора */
+}
+
+/* Чекбокс при наведении курсора */
+QCheckBox:hover {
+    color: #424242; /* Более темный черный цвет текста при наведении */
+}
+
+/* Чекбокс при фокусировке */
+QCheckBox:focus {
+    outline: none; /* Убираем стандартную рамку фокуса */
+}
+
+
+/* Общий стиль карточки */
+QFrame#product_card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Стиль для изображения товара */
+QLabel#product_card_image {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 8px;
+}
+
+/* Стиль для названия товара */
+QLabel#product_card_name {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 8px;
+}
+
+/* Стиль для цены товара */
+QLabel#product_card_price {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-top: 4px;
+}
+
+/* Стиль для кнопки "Купить" */
+QPushButton#product_card_buy_button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+QPushButton#product_card_buy_button:hover {
+    background-color: #1976D2;
+}
